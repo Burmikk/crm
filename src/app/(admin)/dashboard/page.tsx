@@ -1,14 +1,12 @@
-import { FC } from 'react';
+import React from 'react';
 import Header from '@/app/components/header';
-import ButtonError from '@/app/components/button-error';
 
-interface DashboardProps {}
-const Dashboard: FC<DashboardProps> = () => {
+export interface PageProps {}
+
+export default function Page({}: PageProps) {
   return (
-    <main>
-      <Header>Dashboard Page </Header>
-      <ButtonError />
-    </main>
+    <>
+      <Header>Dashboard</Header>
+    </>
   );
-};
-export default Dashboard;
+}
